@@ -10,7 +10,7 @@ public class WBBeyronHoe extends ItemHoe {
 	public WBBeyronHoe (String unlocalizedName, ToolMaterial material){
 		super(material);
 		this.setUnlocalizedName(unlocalizedName);
-		this.setCreativeTab(RWGlobal.wbCreativeTab);
+		this.setCreativeTab(RWGlobal.rwCreativeTab);
 	}
 
 	

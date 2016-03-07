@@ -10,7 +10,7 @@ public class WBHardenedBeyronChestCart extends ItemMinecart {
 	public WBHardenedBeyronChestCart(String unlocalizedname,EnumMinecartType type) {
 		super(type);
 		this.setUnlocalizedName(unlocalizedname);
-		this.setCreativeTab(RWGlobal.wbCreativeTab);
+		this.setCreativeTab(RWGlobal.rwCreativeTab);
 		this.setMaxStackSize(3);
 	}
 

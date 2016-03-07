@@ -11,7 +11,7 @@ public class WBItem extends Item {
 		super();
 		
 		this.setUnlocalizedName(name);
-		this.setCreativeTab(RWGlobal.wbCreativeTab);
+		this.setCreativeTab(RWGlobal.rwCreativeTab);
 	}
 	
 }

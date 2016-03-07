@@ -17,7 +17,7 @@ public class Main {
 	@Instance(RWGlobal.MOD_ID)
 	public static Main instance;
 	
-	@SidedProxy(clientSide = RWGlobal.WB_CLIENT_PROXY, serverSide = RWGlobal.WB_COMMON_PROXY)
+	@SidedProxy(clientSide = RWGlobal.RW_CLIENT_PROXY, serverSide = RWGlobal.RW_COMMON_PROXY)
 	public static CommonProxy proxy;
 	
 	@EventHandler

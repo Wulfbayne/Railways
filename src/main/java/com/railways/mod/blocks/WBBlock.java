@@ -16,7 +16,7 @@ public class WBBlock extends Block{
 		
 		super(material);
 		
-		this.setCreativeTab(RWGlobal.wbCreativeTab);
+		this.setCreativeTab(RWGlobal.rwCreativeTab);
 		this.setUnlocalizedName(unlocalizedName);
 		this.setHardness(hardness);
 		this.setResistance(resistance);	

@@ -10,7 +10,7 @@ public class WBWrench extends ItemPickaxe {
 	public WBWrench(String unlocalizedname,ToolMaterial material) {
 		super(material);
 		this.setUnlocalizedName(unlocalizedname);
-		this.setCreativeTab(RWGlobal.wbCreativeTab);
+		this.setCreativeTab(RWGlobal.rwCreativeTab);
 
 	}
 

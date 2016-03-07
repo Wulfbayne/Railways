@@ -10,7 +10,7 @@ public class WBBeyronSword extends ItemSword {
 	public WBBeyronSword (String unlocalizedName, ToolMaterial material){
 		super(material);
 		this.setUnlocalizedName(unlocalizedName);
-		this.setCreativeTab(RWGlobal.wbCreativeTab);
+		this.setCreativeTab(RWGlobal.rwCreativeTab);
 	}
 
 	

@@ -9,7 +9,7 @@ public class WBSledgeHammer extends ItemPickaxe {
 	public WBSledgeHammer(String unlocalizedname,ToolMaterial material) {
 		super(material);
 		this.setUnlocalizedName(unlocalizedname);
-		this.setCreativeTab(RWGlobal.wbCreativeTab);
+		this.setCreativeTab(RWGlobal.rwCreativeTab);
 
 	}
 

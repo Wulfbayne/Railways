@@ -11,7 +11,7 @@ public class WBHardenedBeyronCart extends ItemMinecart {
 	public WBHardenedBeyronCart(String unlocalizedname,EnumMinecartType type) {
 		super(type);
 		this.setUnlocalizedName(unlocalizedname);
-		this.setCreativeTab(RWGlobal.wbCreativeTab);
+		this.setCreativeTab(RWGlobal.rwCreativeTab);
 		this.setMaxStackSize(3);
 	}
 	

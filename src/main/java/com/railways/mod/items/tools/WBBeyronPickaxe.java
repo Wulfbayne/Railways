@@ -11,7 +11,7 @@ public class WBBeyronPickaxe extends ItemPickaxe {
 	public WBBeyronPickaxe (String unlocalizedName, ToolMaterial material){
 		super(material);
 		this.setUnlocalizedName(unlocalizedName);
-		this.setCreativeTab(RWGlobal.wbCreativeTab);
+		this.setCreativeTab(RWGlobal.rwCreativeTab);
 	}
 
 }

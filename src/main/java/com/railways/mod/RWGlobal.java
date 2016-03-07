@@ -7,9 +7,9 @@ public class RWGlobal {
 	public static final String VERSION = "V 0.0.1";
 	public static final String DESCRIPTION = "Bring Trains and Freight systems to your world.";
 	
-	public static final String WB_CLIENT_PROXY = "com.wulfbayne.mod.proxy.ClientProxy";
-	public static final String WB_COMMON_PROXY = "com.wulfbayne.mod.proxy.CommonProxy";
+	public static final String RW_CLIENT_PROXY = "com.railways.mod.proxy.ClientProxy";
+	public static final String RW_COMMON_PROXY = "com.railways.mod.proxy.CommonProxy";
 	
-	public static final RWCreativeTab wbCreativeTab = new RWCreativeTab("wbCreativeTab");
+	public static final RWCreativeTab rwCreativeTab = new RWCreativeTab("rwCreativeTab");
 	
 }

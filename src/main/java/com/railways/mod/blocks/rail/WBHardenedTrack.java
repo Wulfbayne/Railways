@@ -11,7 +11,7 @@ public class WBHardenedTrack extends BlockRail {
     {
         super();
         this.setUnlocalizedName(unlocalizedname);
-        this.setCreativeTab(RWGlobal.wbCreativeTab);
+        this.setCreativeTab(RWGlobal.rwCreativeTab);
         this.setHardness(16.0F);
         this.setResistance(300F);        
         this.setStepSound(soundTypeMetal);

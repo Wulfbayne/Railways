@@ -16,7 +16,7 @@ public class WBBeyronArmor extends ItemArmor{
 	public WBBeyronArmor(String unlocalizedname, ArmorMaterial material, int renderIndex, int armorType) {
 		super(material, renderIndex, armorType);
 		this.setUnlocalizedName(unlocalizedname);
-		this.setCreativeTab(RWGlobal.wbCreativeTab);
+		this.setCreativeTab(RWGlobal.rwCreativeTab);
 		
 	}
 	

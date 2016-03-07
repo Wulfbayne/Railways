@@ -14,7 +14,7 @@ public class WBOreCrusher extends BlockContainer {
 	public WBOreCrusher(String unlocalizedname, boolean isActive) {
 		super(Material.iron);
 		this.setUnlocalizedName(unlocalizedname);
-		this.setCreativeTab(RWGlobal.wbCreativeTab);
+		this.setCreativeTab(RWGlobal.rwCreativeTab);
 		this.isActive = isActive;		
 
 	}

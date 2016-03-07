@@ -9,7 +9,7 @@ public class WBBeyronAxe extends ItemAxe {
 	public WBBeyronAxe (String unlocalizedName, ToolMaterial material){
 		super(material);
 		this.setUnlocalizedName(unlocalizedName);
-		this.setCreativeTab(RWGlobal.wbCreativeTab);
+		this.setCreativeTab(RWGlobal.rwCreativeTab);
 	}
 	
 }

@@ -12,7 +12,7 @@ public class WBPoweredTrack extends BlockRailPowered {
     {
         super();
         this.setUnlocalizedName(unlocalizedname);
-        this.setCreativeTab(RWGlobal.wbCreativeTab);
+        this.setCreativeTab(RWGlobal.rwCreativeTab);
         this.setDefaultState(this.blockState.getBaseState().withProperty(SHAPE, BlockRailBase.EnumRailDirection.NORTH_SOUTH).withProperty(POWERED, Boolean.valueOf(false)));
     }
 	

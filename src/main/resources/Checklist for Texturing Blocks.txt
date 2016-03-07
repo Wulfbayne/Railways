@@ -1,0 +1,8 @@
+Checklist for Texturing Blocks
+
+Blockstate
+Block Model
+Item Model
+Texture File
+
+Update Lang file

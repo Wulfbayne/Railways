@@ -1,36 +1,22 @@
-# Ignore All
-/*
+# eclipse
+bin
+*.launch
+.settings
+.metadata
+.classpath
+.project
 
-# Except:
-
-# License
-!/LICENSE*
-!/COPYING*
-
-# Sources
-!/src
-
-# github
-!/.gitignore
-!/*.md
-!/*.markdown
+# idea
+out
+*.ipr
+*.iws
+*.iml
+.idea
 
 # gradle
-!/*.gradle
-!/build.properties
-!/gradle.properties
-!/gradlew*
-!/gradle
+build
+.gradle
 
-# Travis
-!/.travis.yml
-
-# unwanted os-generated files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-*~
+# other
+eclipse
+run

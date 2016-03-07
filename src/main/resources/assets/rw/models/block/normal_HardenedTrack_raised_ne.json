@@ -1,0 +1,6 @@
+{
+    "parent": "wb:block/HardenedTrack_raised_ne",
+    "textures": {
+        "rail": "wb:blocks/HardenedTrack"
+    }
+}

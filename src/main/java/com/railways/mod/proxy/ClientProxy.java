@@ -1,7 +1,7 @@
 package com.railways.mod.proxy;
 
-import com.railways.mod.render.WBBlockRender;
-import com.railways.mod.render.WBItemRender;
+import com.railways.mod.render.RWBlockRender;
+import com.railways.mod.render.RWItemRender;
 
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -20,8 +20,8 @@ public class ClientProxy extends CommonProxy{
 		
 		super.Init(Event);
 		
-		WBBlockRender.registerBlockRender();
-		WBItemRender.registerItemRender();
+		RWBlockRender.registerBlockRender();
+		RWItemRender.registerItemRender();
 		
 	}
 	

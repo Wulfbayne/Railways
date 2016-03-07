@@ -1,12 +1,12 @@
 package com.railways.mod.proxy;
 
-import com.railways.mod.blocks.WBBlocks;
-import com.railways.mod.crafting.WBRecipes;
-import com.railways.mod.crafting.WBSmelting;
-import com.railways.mod.handler.WBDropHandler;
-import com.railways.mod.handler.WBFuelHandler;
-import com.railways.mod.items.WBItems;
-import com.railways.mod.world.WBWorldGen;
+import com.railways.mod.blocks.RWBlocks;
+import com.railways.mod.crafting.RWRecipes;
+import com.railways.mod.crafting.RWSmelting;
+import com.railways.mod.handler.RWDropHandler;
+import com.railways.mod.handler.RWFuelHandler;
+import com.railways.mod.items.RWItems;
+import com.railways.mod.world.RWWorldGen;
 
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Configuration;
@@ -19,24 +19,27 @@ public class CommonProxy {
 
 	public void preInit(FMLPreInitializationEvent preEvent){
 		
-		WBBlocks.initBlocks();
-		WBItems.initItems();
+		RWBlocks.initBlocks();
+		RWItems.initItems();
 		
-		WBRecipes.initRecipes();
-		WBSmelting.initSmelting();
+		RWRecipes.initRecipes();
+		RWSmelting.initSmelting();
 		
+
 	}
 	
 	
 	public void Init(FMLInitializationEvent Event){
-		GameRegistry.registerWorldGenerator(new WBWorldGen(), 0);
-		MinecraftForge.EVENT_BUS.register(new WBDropHandler());
-		GameRegistry.registerFuelHandler(new WBFuelHandler());
+		GameRegistry.registerWorldGenerator(new RWWorldGen(), 0);
+		MinecraftForge.EVENT_BUS.register(new RWDropHandler());
+		GameRegistry.registerFuelHandler(new RWFuelHandler());
 		
 	}
 	
 	
 	public void postInit(FMLPostInitializationEvent postEvent){
 		
-	}	
+	}
 }
+	
+

@@ -1,5 +1,5 @@
 {
     "variants": {
-        "normal": { "model": "wb:BeyronBlock" }
+        "normal": { "model": "rw:BeyronBlock" }
     }
 }

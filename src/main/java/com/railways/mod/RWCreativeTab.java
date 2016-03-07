@@ -1,7 +1,7 @@
 package com.railways.mod;
 
-import com.railways.mod.blocks.WBBlocks;
-import com.railways.mod.items.WBItems;
+import com.railways.mod.blocks.RWBlocks;
+import com.railways.mod.items.RWItems;
 
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
@@ -14,7 +14,7 @@ public class RWCreativeTab extends CreativeTabs {
 	}
 
 	public Item getTabIconItem(){		
-		return WBItems.FuelCore;
+		return RWItems.FuelCore;
 	}
 	
 }

@@ -2,6 +2,8 @@ package com.railways.mod;
 
 import com.railways.mod.proxy.CommonProxy;
 
+import net.minecraftforge.common.config.Configuration;
+import net.minecraftforge.common.config.Property;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -17,13 +19,27 @@ public class Main {
 	@Instance(RWGlobal.MOD_ID)
 	public static Main instance;
 	
+	public static boolean EmpoweredTrackEnabled;
+	public static boolean EnergizedTrackEnabeld;
+	
 	@SidedProxy(clientSide = RWGlobal.RW_CLIENT_PROXY, serverSide = RWGlobal.RW_COMMON_PROXY)
 	public static CommonProxy proxy;
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent preEvent){
+		Configuration config = new Configuration(preEvent.getSuggestedConfigurationFile());
+		config.load();
+		
+		EmpoweredTrackEnabled = config.getBoolean("Empowered Track", Configuration.CATEGORY_GENERAL, false, "Enable/Disable the use of Empowered Track. -- This object is currently under development.");
+		//boolean EnergizedTrackEnabled = config.get(Configuration.CATEGORY_GENERAL,"EnergizedTrackEnabled", true).getBoolean(true);
+		
+		EnergizedTrackEnabeld = config.getBoolean("Energized Track", Configuration.CATEGORY_GENERAL, false, "Enable/Disable the use of Energized Track. -- This object is currently under development.");
+		
+			
+		config.save();
 		
 		this.proxy.preInit(preEvent);
+
 	}
 	
 	@EventHandler
@@ -39,6 +55,8 @@ public class Main {
 		this.proxy.postInit(postEvent);
 		
 	}
+	
+	
 	
 	
 }

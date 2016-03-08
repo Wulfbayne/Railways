@@ -1,6 +1,0 @@
-{
-    "parent": "wb:block/EmpoweredTrack_raised_sw",
-    "textures": {
-        "rail": "wb:blocks/EmpoweredTrack"
-    }
-}

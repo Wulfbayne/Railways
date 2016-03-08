@@ -38,14 +38,14 @@ public class RWItems {
 	public static Item BeyronSheet;
 	
 	// Tools
-	public static ToolMaterial BeyronTools = EnumHelper.addToolMaterial("BeyronTools", 3, 800, 8.0F, 4.0F, 10);
+	public static ToolMaterial BeyronTools = EnumHelper.addToolMaterial("BeyronTools", 2, 800, 8.0F, 4.0F, 10);
 	public static Item BeyronAxe;
 	public static Item BeyronPickaxe;
 	public static Item BeyronSword;
 	public static Item BeyronShovel;
 	public static Item BeyronHoe;
 	
-	public static ToolMaterial RailTools = EnumHelper.addToolMaterial("RailTools", 0, 300, 8.0F, 0.0F, 0);
+	public static ToolMaterial RailTools = EnumHelper.addToolMaterial("RailTools", 0, 300, 0.0F, 0.0F, 0);
 	public static Item SledgeHammer;
 	public static Item Wrench;
 	public static Item ForgeHammer;

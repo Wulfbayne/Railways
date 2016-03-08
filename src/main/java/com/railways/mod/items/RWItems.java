@@ -4,11 +4,14 @@ import com.railways.mod.RWGlobal;
 import com.railways.mod.items.armor.RWBeyronArmor;
 import com.railways.mod.items.carts.RWHardenedBeyronCart;
 import com.railways.mod.items.carts.RWHardenedBeyronChestCart;
+import com.railways.mod.items.metals.RWBeyronSheet;
+import com.railways.mod.items.metals.RWFoldedBeyron;
 import com.railways.mod.items.tools.RWBeyronAxe;
 import com.railways.mod.items.tools.RWBeyronHoe;
 import com.railways.mod.items.tools.RWBeyronPickaxe;
 import com.railways.mod.items.tools.RWBeyronShovel;
 import com.railways.mod.items.tools.RWBeyronSword;
+import com.railways.mod.items.tools.RWForgeHammer;
 import com.railways.mod.items.tools.RWSledgeHammer;
 import com.railways.mod.items.tools.RWWrench;
 
@@ -30,6 +33,10 @@ public class RWItems {
 	// Gems
 	public static Item SarnaStone;
 	
+	// Metals
+	public static Item FoldedBeyron;
+	public static Item BeyronSheet;
+	
 	// Tools
 	public static ToolMaterial BeyronTools = EnumHelper.addToolMaterial("BeyronTools", 3, 800, 8.0F, 4.0F, 10);
 	public static Item BeyronAxe;
@@ -41,6 +48,7 @@ public class RWItems {
 	public static ToolMaterial RailTools = EnumHelper.addToolMaterial("RailTools", 0, 300, 8.0F, 0.0F, 0);
 	public static Item SledgeHammer;
 	public static Item Wrench;
+	public static Item ForgeHammer;
 	
 	// Armor
 	public static ArmorMaterial BeyronArmor = EnumHelper.addArmorMaterial("BeyronArmor", RWGlobal.MOD_ID + ":"+ "beyron", 22, new int[]{2, 6, 5, 2}, 30);
@@ -65,6 +73,10 @@ public class RWItems {
 		// Dust
 		GameRegistry.registerItem(BeyronDust = new RWItem("BeyronDust"), "BeyronDust");
 		
+		// Metals
+		GameRegistry.registerItem(FoldedBeyron = new RWFoldedBeyron("FoldedBeyron"), "FoldedBeyron");
+		GameRegistry.registerItem(BeyronSheet = new RWBeyronSheet("BeyronSheet"), "BeyronSheet");
+		
 		// Tools
 		GameRegistry.registerItem(BeyronAxe = new RWBeyronAxe("BeyronAxe", BeyronTools), "BeyronAxe");
 		GameRegistry.registerItem(BeyronPickaxe = new RWBeyronPickaxe("BeyronPickaxe", BeyronTools), "BeyronPickaxe");
@@ -74,6 +86,7 @@ public class RWItems {
 		
 		GameRegistry.registerItem(SledgeHammer = new RWSledgeHammer("SledgeHammer", RailTools), "SledgeHammer");
 		GameRegistry.registerItem(Wrench = new RWWrench("Wrench", RailTools), "Wrench");
+		GameRegistry.registerItem(ForgeHammer = new RWForgeHammer("ForgeHammer", RailTools), "ForgeHammer");
 		
 		// Armor
 		GameRegistry.registerItem(BeyronHelmet = new RWBeyronArmor("BeyronHelmet", BeyronArmor, 1, 0), "BeyronHelmet");

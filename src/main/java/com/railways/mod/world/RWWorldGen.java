@@ -33,14 +33,14 @@ public class RWWorldGen implements IWorldGenerator{
 			switch(world.provider.getDimensionId()) {
 			
 			case 0: //OverWorld
-				this.runGen(this.BeyronOre, world, random, chunkX, chunkZ, 20, 0, 128);
-				this.runGen(this.SarnaOre, world, random, chunkX, chunkZ, 20, 0, 128);
+				this.runGen(this.BeyronOre, world, random, chunkX, chunkZ, 20, 25, 60);
+				this.runGen(this.SarnaOre, world, random, chunkX, chunkZ, 15, 0, 18);
 				
 				break;
 				
 			case -1: //Nether
-				this.runGen(this.netherBeyronOre, world, random, chunkX, chunkZ, 20, 0, 128);
-				this.runGen(this.netherSarnaOre, world, random, chunkX, chunkZ, 20, 0, 128);
+				this.runGen(this.netherBeyronOre, world, random, chunkX, chunkZ, 20, 25, 128);
+				this.runGen(this.netherSarnaOre, world, random, chunkX, chunkZ, 15, 0, 18);
 				
 				break;
 			

@@ -1,0 +1,6 @@
+{
+    "parent": "railways:block/EmpoweredTrack_raised_ne",
+    "textures": {
+        "rail": "railways:blocks/EmpoweredTrack_powered"
+    }
+}

@@ -1,0 +1,36 @@
+itemGroup.wbCreativeTab=Railways
+
+item.BeyronIngot.name=Beyron Ingot
+item.BeyronDust.name=Beyron Dust
+item.SarnaStone.name=Sarna Stone
+
+item.BeyronAxe.name=Beyron Axe
+item.BeyronHoe.name=Beyron Hoe
+item.BeyronPickaxe.name=Beyron Pickaxe
+item.BeyronShovel.name=Beyron Shovel
+item.BeyronSword.name=Beyron Sword
+item.SledgeHammer.name=Sledge Hammer
+item.Wrench.name=Wrench
+
+item.FuelCore.name=Fuel Core
+item.IncendiusGel.name=Incendius Gel
+
+item.BeyronHelmet.name=Beyron Helmet
+item.BeyronChestplate.name=Beyron Chestplate
+item.BeyronLeggings.name=Beyron Leggings
+item.BeyronBoots.name=Beyron Boots
+
+tile.EmpoweredTrack.name=Empowered Track
+tile.EnergizedTrack.name=Energized Track
+tile.HardenedTrack.name=Hardened Track
+
+item.HardenedBeyronCart.name=Hardened Beyron Cart
+item.HardenedBeyronChestCart.name=Hardened Beyron Chest Cart
+
+tile.BeyronOre.name=Beyron Ore
+tile.netherBeyronOre.name=Nether Beyron Ore
+tile.SarnaOre.name=Sarna Ore
+tile.netherSarnaOre.name=Nether Sarna Ore
+
+tile.BeyronBlock.name=Beyron Block
+tile.SarnaBlock.name=Sarna Block

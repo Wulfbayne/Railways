@@ -1,6 +1,7 @@
 package com.railways.mod.blocks;
 
 
+import com.railways.mod.RWGlobal;
 import com.railways.mod.blocks.machine.RWOreCrusher;
 import com.railways.mod.blocks.rail.RWEmpoweredTrack;
 import com.railways.mod.blocks.rail.RWEnergizedTrack;
@@ -63,12 +64,18 @@ public class RWBlocks {
 		
 		// Rail		
 		GameRegistry.registerBlock(HardenedTrack = new RWHardenedTrack("HardenedTrack"),"HardenedTrack");
-		GameRegistry.registerBlock(EmpoweredTrack = new RWEmpoweredTrack("EmpoweredTrack",true), "EmpoweredTrack");
-		GameRegistry.registerBlock(EnergizedTrack = new RWEnergizedTrack("EnergizedTrack", true), "EnergizedTrack");
+		if (RWGlobal.EmpoweredTrackEnabled){
+			GameRegistry.registerBlock(EmpoweredTrack = new RWEmpoweredTrack("EmpoweredTrack",true), "EmpoweredTrack");
+		}
+		if (RWGlobal.EnergizedTrackEnabeld){
+			GameRegistry.registerBlock(EnergizedTrack = new RWEnergizedTrack("EnergizedTrack", true), "EnergizedTrack");
+		}		
 		
 		// Machines
-		GameRegistry.registerBlock(OreCrusherIdle = new RWOreCrusher("OreCrusherIdle", false), "OreCrusherIdle");
-		GameRegistry.registerBlock(OreCrusherIdle = new RWOreCrusher("OreCrusherActive", true), "OreCrusherActive");
+		if (RWGlobal.OreCrusherEnabled){
+			GameRegistry.registerBlock(OreCrusherIdle = new RWOreCrusher("OreCrusherIdle", false), "OreCrusherIdle");
+			GameRegistry.registerBlock(OreCrusherIdle = new RWOreCrusher("OreCrusherActive", true), "OreCrusherActive");			
+		}
 		
 		
 	}

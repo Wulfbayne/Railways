@@ -90,6 +90,16 @@ public class RWRecipes {
 						"###",
 						'#', RWItems.BeyronIngot
 				});
+		GameRegistry.addShapelessRecipe(new ItemStack(RWItems.BeyronSheet), 
+				new Object[]{						
+						RWItems.BeyronIngot,
+						RWItems.ForgeHammer
+				});
+		GameRegistry.addShapelessRecipe(new ItemStack(RWItems.FoldedBeyron), 
+				new Object[]{
+						 RWItems.BeyronSheet,
+						 RWItems.ForgeHammer
+				});				
 
 
 

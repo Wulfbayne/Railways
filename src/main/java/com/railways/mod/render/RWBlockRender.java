@@ -29,8 +29,13 @@ public final class RWBlockRender {
 		regBlock(RWBlocks.SarnaBlock);
 		
 		// Rails
-		regBlock(RWBlocks.EmpoweredTrack);
-		//regBlock(WBBlocks.EnergizedTrack);
+		if (RWGlobal.EmpoweredTrackEnabled){
+			regBlock(RWBlocks.EmpoweredTrack);
+		}
+		if (RWGlobal.EnergizedTrackEnabeld){
+			regBlock(RWBlocks.EnergizedTrack);
+		}
+		
 		regBlock(RWBlocks.HardenedTrack);
 
 	}

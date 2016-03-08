@@ -1,0 +1,6 @@
+{
+    "parent": "railways:block/HardenedTrack_flat",
+    "textures": {
+        "rail": "railways:blocks/HardenedTrack"
+    }
+}

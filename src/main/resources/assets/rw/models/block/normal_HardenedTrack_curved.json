@@ -1,6 +1,0 @@
-{
-    "parent": "wb:block/HardenedTrack_curved",
-    "textures": {
-        "rail": "wb:blocks/HardenedTrack_turned"
-    }
-}

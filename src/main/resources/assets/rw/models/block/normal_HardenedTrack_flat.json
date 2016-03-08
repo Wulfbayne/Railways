@@ -1,6 +1,0 @@
-{
-    "parent": "wb:block/HardenedTrack_flat",
-    "textures": {
-        "rail": "wb:blocks/HardenedTrack"
-    }
-}

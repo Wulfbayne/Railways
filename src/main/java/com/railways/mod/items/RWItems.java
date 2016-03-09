@@ -4,6 +4,10 @@ import com.railways.mod.RWGlobal;
 import com.railways.mod.items.armor.RWBeyronArmor;
 import com.railways.mod.items.carts.RWHardenedBeyronCart;
 import com.railways.mod.items.carts.RWHardenedBeyronChestCart;
+import com.railways.mod.items.fuel.RWFuelCore;
+import com.railways.mod.items.fuel.RWIncendiusGel;
+import com.railways.mod.items.gems.RWSarnaStone;
+import com.railways.mod.items.ingots.RWBeyronIngot;
 import com.railways.mod.items.metals.RWBeyronSheet;
 import com.railways.mod.items.metals.RWFoldedBeyron;
 import com.railways.mod.items.tools.RWBeyronAxe;
@@ -26,9 +30,6 @@ public class RWItems {
 
 	// Ingots
 	public static Item BeyronIngot;
-	
-	// Dusts
-	public static Item BeyronDust;
 	
 	// Gems
 	public static Item SarnaStone;
@@ -68,10 +69,7 @@ public class RWItems {
 	public static void initItems(){
 		
 		// Ores
-		GameRegistry.registerItem(BeyronIngot = new RWItem("BeyronIngot"), "BeyronIngot");
-		
-		// Dust
-		GameRegistry.registerItem(BeyronDust = new RWItem("BeyronDust"), "BeyronDust");
+		GameRegistry.registerItem(BeyronIngot = new RWBeyronIngot("BeyronIngot"), "BeyronIngot");
 		
 		// Metals
 		GameRegistry.registerItem(FoldedBeyron = new RWFoldedBeyron("FoldedBeyron"), "FoldedBeyron");
@@ -86,7 +84,7 @@ public class RWItems {
 		
 		GameRegistry.registerItem(SledgeHammer = new RWSledgeHammer("SledgeHammer", RailTools), "SledgeHammer");
 		GameRegistry.registerItem(Wrench = new RWWrench("Wrench", RailTools), "Wrench");
-		GameRegistry.registerItem(ForgeHammer = new RWForgeHammer("ForgeHammer", RailTools), "ForgeHammer");
+		GameRegistry.registerItem(ForgeHammer = new RWForgeHammer("ForgeHammer"), "ForgeHammer");
 		
 		// Armor
 		GameRegistry.registerItem(BeyronHelmet = new RWBeyronArmor("BeyronHelmet", BeyronArmor, 1, 0), "BeyronHelmet");
@@ -95,11 +93,11 @@ public class RWItems {
 		GameRegistry.registerItem(BeyronBoots = new RWBeyronArmor("BeyronBoots", BeyronArmor, 1, 3), "BeyronBoots");
 				
 		// Gems
-		GameRegistry.registerItem(SarnaStone = new RWItem("SarnaStone"), "SarnaStone");
+		GameRegistry.registerItem(SarnaStone = new RWSarnaStone("SarnaStone"), "SarnaStone");
 		
 		// Fuels
-		GameRegistry.registerItem(FuelCore = new RWItem("FuelCore"), "FuelCore");
-		GameRegistry.registerItem(IncendiusGel = new RWItem("IncendiusGel"), "IncendiusGel");
+		GameRegistry.registerItem(FuelCore = new RWFuelCore("FuelCore"), "FuelCore");
+		GameRegistry.registerItem(IncendiusGel = new RWIncendiusGel("IncendiusGel"), "IncendiusGel");
 		
 		// Minecarts
 		GameRegistry.registerItem(HardenedBeyronCart = new RWHardenedBeyronCart("HardenedBeyronCart", EntityMinecart.EnumMinecartType.RIDEABLE), "HardenedBeyronCart");

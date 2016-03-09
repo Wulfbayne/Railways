@@ -6,6 +6,7 @@ import com.railways.mod.items.RWItems;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.oredict.OreDictionary;
 
 public class RWRecipes {
 
@@ -90,15 +91,39 @@ public class RWRecipes {
 						"###",
 						'#', RWItems.BeyronIngot
 				});
+		GameRegistry.addRecipe(new ItemStack(RWItems.ForgeHammer),
+				new Object[] {
+						"#S#",
+						" S ",
+						" S ",
+						'#', RWItems.BeyronIngot,
+						'S', Items.stick,
+				});
+		GameRegistry.addRecipe(new ItemStack(RWItems.Wrench),
+				new Object[] {
+						"# #",
+						" # ",
+						"   ",
+						'#', RWItems.BeyronIngot
+				});
+		GameRegistry.addRecipe(new ItemStack(RWItems.SledgeHammer),
+				new Object[] {
+						"#S#",
+						"#S ",
+						" S ",
+						'#', RWItems.BeyronIngot
+				});
+
+		ItemStack ForgeHammerStack = new ItemStack(RWItems.ForgeHammer.setContainerItem(RWItems.ForgeHammer),1,OreDictionary.WILDCARD_VALUE);
 		GameRegistry.addShapelessRecipe(new ItemStack(RWItems.BeyronSheet), 
 				new Object[]{						
 						RWItems.BeyronIngot,
-						RWItems.ForgeHammer
+						ForgeHammerStack,
 				});
 		GameRegistry.addShapelessRecipe(new ItemStack(RWItems.FoldedBeyron), 
 				new Object[]{
 						 RWItems.BeyronSheet,
-						 RWItems.ForgeHammer
+						 ForgeHammerStack,
 				});				
 
 

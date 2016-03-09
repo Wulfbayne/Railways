@@ -39,24 +39,19 @@ public class RWBlocks {
 	public static Block OreCrusherIdle;
 	public static Block OreCrusherActive;
 
-
 	public static void initBlocks(){
 		
 		// Ores
 		GameRegistry.registerBlock(BeyronOre = new RWBlock("BeyronOre", Material.rock, 3, 15), "BeyronOre");
-		OreDictionary.registerOre("oreBeyron", BeyronOre);
-		
+				
 		// Nether Ores
 		GameRegistry.registerBlock(netherBeyronOre = new RWBlock("netherBeyronOre", Material.rock, 3, 15), "netherBeyronOre");
-		OreDictionary.registerOre("oreNetherBeyron", netherBeyronOre);
-
+		
 		// Gem Ores
 		GameRegistry.registerBlock(SarnaOre = new RWBlock("SarnaOre", Material.rock, 3, 15), "SarnaOre");
-		OreDictionary.registerOre("oreSarna", SarnaOre);
-		
+				
 		// Nether Gem Ores
-		GameRegistry.registerBlock(netherSarnaOre = new RWBlock("netherSarnaOre", Material.rock, 3, 15), "netherSarnaOre");
-		OreDictionary.registerOre("oreNetherSarna", netherSarnaOre);
+		GameRegistry.registerBlock(netherSarnaOre = new RWBlock("netherSarnaOre", Material.rock, 3, 15), "netherSarnaOre");		
 		
 		// Blocks
 		GameRegistry.registerBlock(BeyronBlock = new RWBlock("BeyronBlock", Material.iron, 3, 15), "BeyronBlock");
@@ -78,9 +73,5 @@ public class RWBlocks {
 		}
 		
 		
-	}
-	
-	// Register to Ore Dictionary
-	
-	
+	}	
 }

@@ -24,14 +24,6 @@ public class Main {
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent preEvent){
-		Configuration config = new Configuration(preEvent.getSuggestedConfigurationFile());
-		config.load();
-		
-		RWGlobal.EmpoweredTrackEnabled = config.getBoolean("Empowered Track", Configuration.CATEGORY_GENERAL, false, "Enable/Disable the use of Empowered Track. -- This object is currently under development.");		
-		RWGlobal.EnergizedTrackEnabeld = config.getBoolean("Energized Track", Configuration.CATEGORY_GENERAL, false, "Enable/Disable the use of Energized Track. -- This object is currently under development.");
-		RWGlobal.OreCrusherEnabled = config.getBoolean("Ore Crusher", Configuration.CATEGORY_GENERAL, false, "Enable/Disable the use of the Ore Crusher. -- This object is currently under development.");
-			
-		config.save();
 		
 		this.proxy.preInit(preEvent);
 

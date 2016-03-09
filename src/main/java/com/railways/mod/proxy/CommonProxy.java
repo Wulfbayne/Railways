@@ -3,6 +3,7 @@ package com.railways.mod.proxy;
 import com.railways.mod.blocks.RWBlocks;
 import com.railways.mod.crafting.RWRecipes;
 import com.railways.mod.crafting.RWSmelting;
+import com.railways.mod.handler.RWConfigHandler;
 import com.railways.mod.handler.RWDropHandler;
 import com.railways.mod.handler.RWFuelHandler;
 import com.railways.mod.items.RWItems;
@@ -19,12 +20,13 @@ public class CommonProxy {
 
 	public void preInit(FMLPreInitializationEvent preEvent){
 		
+		RWConfigHandler.RWConfigManger(preEvent);
+		
 		RWBlocks.initBlocks();
 		RWItems.initItems();
 		
 		RWRecipes.initRecipes();
-		RWSmelting.initSmelting();
-		
+		RWSmelting.initSmelting();		
 
 	}
 	

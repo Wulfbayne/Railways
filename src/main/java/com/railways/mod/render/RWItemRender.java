@@ -15,9 +15,6 @@ public class RWItemRender {
 		// Ingots
 		regItem(RWItems.BeyronIngot);
 		
-		// Dusts
-		regItem(RWItems.BeyronDust);
-		
 		// Gems
 		regItem(RWItems.SarnaStone);
 		
@@ -29,6 +26,11 @@ public class RWItemRender {
 		regItem(RWItems.BeyronSword);
 		regItem(RWItems.SledgeHammer);
 		regItem(RWItems.Wrench);
+		regItem(RWItems.ForgeHammer);
+		
+		// Metals
+		regItem(RWItems.BeyronSheet);
+		regItem(RWItems.FoldedBeyron);
 						
 		// Armor
 		regItem(RWItems.BeyronBoots);

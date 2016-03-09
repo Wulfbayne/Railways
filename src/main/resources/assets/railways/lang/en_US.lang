@@ -1,16 +1,19 @@
 itemGroup.wbCreativeTab=Railways
 
 item.BeyronIngot.name=Beyron Ingot
-item.BeyronDust.name=Beyron Dust
 item.SarnaStone.name=Sarna Stone
+item.BeyronSheet.name=Beyron Sheet
+item.FoldedBeyron.name=Folded Beyron
 
 item.BeyronAxe.name=Beyron Axe
 item.BeyronHoe.name=Beyron Hoe
 item.BeyronPickaxe.name=Beyron Pickaxe
 item.BeyronShovel.name=Beyron Shovel
 item.BeyronSword.name=Beyron Sword
+
 item.SledgeHammer.name=Sledge Hammer
 item.Wrench.name=Wrench
+item.ForgeHammer.name=Forge Hammer
 
 item.FuelCore.name=Fuel Core
 item.IncendiusGel.name=Incendius Gel

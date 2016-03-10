@@ -1,9 +1,12 @@
-itemGroup.wbCreativeTab=Railways
+itemGroup.rwCreativeTab=Railways
 
 item.BeyronIngot.name=Beyron Ingot
 item.SarnaStone.name=Sarna Stone
 item.BeyronSheet.name=Beyron Sheet
 item.FoldedBeyron.name=Folded Beyron
+item.HardenedBeyronIngot.name=Hardened Beyron Ingot
+item.EnergizedBeyronIngot.name=Energized Beyron Ingot
+item.EmpoweredBeyronIngot.name=Empowered Beyron Ingot
 
 item.BeyronAxe.name=Beyron Axe
 item.BeyronHoe.name=Beyron Hoe
@@ -22,6 +25,12 @@ item.BeyronHelmet.name=Beyron Helmet
 item.BeyronChestplate.name=Beyron Chestplate
 item.BeyronLeggings.name=Beyron Leggings
 item.BeyronBoots.name=Beyron Boots
+
+item.HardenedBeyronHelmet.name=Hardened Beyron Helmet
+item.HardenedBeyronChestplate.name=Hardened Beyron Chestplate
+item.HardenedBeyronLeggings.name=Hardened Beyron Leggings
+item.HardenedBeyronBoots.name=Hardened Beyron Boots
+
 
 tile.EmpoweredTrack.name=Empowered Track
 tile.EnergizedTrack.name=Energized Track

@@ -2,12 +2,16 @@ package com.railways.mod.items;
 
 import com.railways.mod.RWGlobal;
 import com.railways.mod.items.armor.RWBeyronArmor;
+import com.railways.mod.items.armor.RWHardenedBeyronArmor;
 import com.railways.mod.items.carts.RWHardenedBeyronCart;
 import com.railways.mod.items.carts.RWHardenedBeyronChestCart;
 import com.railways.mod.items.fuel.RWFuelCore;
 import com.railways.mod.items.fuel.RWIncendiusGel;
 import com.railways.mod.items.gems.RWSarnaStone;
 import com.railways.mod.items.ingots.RWBeyronIngot;
+import com.railways.mod.items.ingots.RWEmpoweredBeyronIngot;
+import com.railways.mod.items.ingots.RWEnergizedBeyronIngot;
+import com.railways.mod.items.ingots.RWHardenedBeyronIngot;
 import com.railways.mod.items.metals.RWBeyronSheet;
 import com.railways.mod.items.metals.RWFoldedBeyron;
 import com.railways.mod.items.tools.RWBeyronAxe;
@@ -37,6 +41,9 @@ public class RWItems {
 	// Metals
 	public static Item FoldedBeyron;
 	public static Item BeyronSheet;
+	public static Item HardenedBeyronIngot;
+	public static Item EnergizedBeyronIngot;
+	public static Item EmpoweredBeyronIngot;
 	
 	// Tools
 	public static ToolMaterial BeyronTools = EnumHelper.addToolMaterial("BeyronTools", 2, 800, 8.0F, 4.0F, 10);
@@ -57,7 +64,14 @@ public class RWItems {
 	public static Item BeyronChestplate;
 	public static Item BeyronLeggings;
 	public static Item BeyronBoots;
-			
+	
+	// Armor
+	public static ArmorMaterial HardenedBeyronArmor = EnumHelper.addArmorMaterial("HardenedBeyronArmor", RWGlobal.MOD_ID + ":"+ "hardenedbeyron", 32, new int[]{4, 8, 7, 4}, 46);
+	public static Item HardenedBeyronHelmet;
+	public static Item HardenedBeyronChestplate;
+	public static Item HardenedBeyronLeggings;
+	public static Item HardenedBeyronBoots;
+
 	// Fuels
 	public static Item FuelCore;
 	public static Item IncendiusGel;
@@ -74,6 +88,9 @@ public class RWItems {
 		// Metals
 		GameRegistry.registerItem(FoldedBeyron = new RWFoldedBeyron("FoldedBeyron"), "FoldedBeyron");
 		GameRegistry.registerItem(BeyronSheet = new RWBeyronSheet("BeyronSheet"), "BeyronSheet");
+		GameRegistry.registerItem(HardenedBeyronIngot = new RWHardenedBeyronIngot("HardenedBeyronIngot"), "HardenedBeyronIngot");
+		GameRegistry.registerItem(EnergizedBeyronIngot = new RWEnergizedBeyronIngot("EnergizedBeyronIngot"), "EnergizedBeyronIngot");
+		GameRegistry.registerItem(EmpoweredBeyronIngot = new RWEmpoweredBeyronIngot("EmpoweredBeyronIngot"), "EmpoweredBeyronIngot");
 		
 		// Tools
 		GameRegistry.registerItem(BeyronAxe = new RWBeyronAxe("BeyronAxe", BeyronTools), "BeyronAxe");
@@ -91,6 +108,11 @@ public class RWItems {
 		GameRegistry.registerItem(BeyronChestplate = new RWBeyronArmor("BeyronChestplate", BeyronArmor, 1, 1), "BeyronChestplate");
 		GameRegistry.registerItem(BeyronLeggings = new RWBeyronArmor("BeyronLeggings", BeyronArmor, 1, 2), "BeyronLeggings");
 		GameRegistry.registerItem(BeyronBoots = new RWBeyronArmor("BeyronBoots", BeyronArmor, 1, 3), "BeyronBoots");
+		
+		GameRegistry.registerItem(HardenedBeyronHelmet = new RWHardenedBeyronArmor("HardenedBeyronHelmet", HardenedBeyronArmor, 1, 0), "HardenedBeyronHelmet");
+		GameRegistry.registerItem(HardenedBeyronChestplate = new RWHardenedBeyronArmor("HardenedBeyronChestplate", HardenedBeyronArmor, 1, 1), "HardenedBeyronChestplate");
+		GameRegistry.registerItem(HardenedBeyronLeggings = new RWHardenedBeyronArmor("HardenedBeyronLeggings", HardenedBeyronArmor, 1, 2), "HardenedBeyronLeggings");
+		GameRegistry.registerItem(HardenedBeyronBoots = new RWHardenedBeyronArmor("HardenedBeyronBoots", HardenedBeyronArmor, 1, 3), "HardenedBeyronBoots");
 				
 		// Gems
 		GameRegistry.registerItem(SarnaStone = new RWSarnaStone("SarnaStone"), "SarnaStone");

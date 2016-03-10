@@ -31,12 +31,21 @@ public class RWItemRender {
 		// Metals
 		regItem(RWItems.BeyronSheet);
 		regItem(RWItems.FoldedBeyron);
+		regItem(RWItems.HardenedBeyronIngot);
+		regItem(RWItems.EnergizedBeyronIngot);
+		regItem(RWItems.EmpoweredBeyronIngot);
 						
 		// Armor
 		regItem(RWItems.BeyronBoots);
 		regItem(RWItems.BeyronChestplate);
 		regItem(RWItems.BeyronHelmet);
 		regItem(RWItems.BeyronLeggings);
+		
+		regItem(RWItems.HardenedBeyronBoots);
+		regItem(RWItems.HardenedBeyronChestplate);
+		regItem(RWItems.HardenedBeyronHelmet);
+		regItem(RWItems.HardenedBeyronLeggings);
+
 		
 		// Fuels
 		regItem(RWItems.FuelCore);

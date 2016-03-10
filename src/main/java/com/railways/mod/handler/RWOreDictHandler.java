@@ -16,10 +16,21 @@ public class RWOreDictHandler {
 		OreDictionary.registerOre("oreNetherSarna", RWBlocks.netherSarnaOre);
 		
 		// Metals Registration
+
+		// Ingots
 		OreDictionary.registerOre("ingotBeyron", RWItems.BeyronIngot);
+		OreDictionary.registerOre("ingotHardenedBeyron", RWItems.HardenedBeyronIngot);
+		OreDictionary.registerOre("ingotEnergizedBeyron", RWItems.EnergizedBeyronIngot);
+		OreDictionary.registerOre("ingotEmpoweredBeyron", RWItems.EmpoweredBeyronIngot);
+
+		// Extraneous Metals
 		OreDictionary.registerOre("materialBeyronSheet", RWItems.BeyronSheet);
 		OreDictionary.registerOre("materialFoldedBeyron", RWItems.FoldedBeyron);
+		
+		// Gems
 		OreDictionary.registerOre("gemSarnaStone", RWItems.SarnaStone);
+		
+		// Fuels
 		OreDictionary.registerOre("gemFuelCore", RWItems.FuelCore);
 		OreDictionary.registerOre("materialIncendiusGel", RWItems.IncendiusGel);
 		

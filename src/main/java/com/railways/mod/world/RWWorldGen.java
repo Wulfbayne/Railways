@@ -25,7 +25,7 @@ public class RWWorldGen implements IWorldGenerator{
 		this.SarnaOre = new RWWorldGenMinable(RWBlocks.SarnaOre.getDefaultState(),8);
 		
 		this.netherBeyronOre = new RWWorldGenNetherMinable(RWBlocks.netherBeyronOre.getDefaultState(),8);
-		this.netherBeyronOre = new RWWorldGenNetherMinable(RWBlocks.netherBeyronOre.getDefaultState(),8);
+		this.netherSarnaOre = new RWWorldGenNetherMinable(RWBlocks.netherSarnaOre.getDefaultState(),8);
 	}
 
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider) {

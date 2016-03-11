@@ -14,7 +14,16 @@ public class RWGlobal {
 	
 	public static boolean EmpoweredTrackEnabled;
 	public static boolean EnergizedTrackEnabeld;
-	public static boolean OreCrusherEnabled;
+	public static boolean EndericTrackEnabled;
+	public static boolean Workbench;
+	public static boolean Fabricator;
+	public static boolean BeyronCart;
+	public static boolean BeyronFreightCart;
+	public static boolean upgradeHorsepower;
+	public static boolean upgradeSpeed;
+	public static boolean upgradeEfficiency;
+	public static boolean labelLiquids;
+	public static boolean labelGases;
 
 	
 }

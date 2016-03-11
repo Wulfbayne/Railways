@@ -3,6 +3,7 @@ package com.railways.mod.blocks.rail;
 import com.railways.mod.RWGlobal;
 
 import net.minecraft.block.BlockRail;
+import net.minecraft.block.state.IBlockState;
 
 public class RWTrack extends BlockRail {
 	
@@ -11,6 +12,6 @@ public class RWTrack extends BlockRail {
 		this.setUnlocalizedName(unlocalizedname);	       
         this.setStepSound(soundTypeMetal);
 		this.setCreativeTab(RWGlobal.rwCreativeTab);
+		this.setHarvestLevel("pickaxe", 0);
 	}
-
 }

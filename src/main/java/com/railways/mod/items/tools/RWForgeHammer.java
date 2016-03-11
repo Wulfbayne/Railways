@@ -13,6 +13,7 @@ public class RWForgeHammer extends Item {
 		this.setUnlocalizedName(unlocalizedname);
 		this.setCreativeTab(RWGlobal.rwCreativeTab);
 		this.setMaxDamage(150);
+		this.setMaxStackSize(1);
 	}
 	
 	public boolean doesContainerItemLeaveCraftingGrid(ItemStack itemstack)

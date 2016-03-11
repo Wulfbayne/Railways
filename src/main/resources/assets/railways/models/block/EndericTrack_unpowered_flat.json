@@ -1,0 +1,6 @@
+{
+    "parent": "railways:block/EndericTrack_flat",
+    "textures": {
+        "rail": "railways:blocks/EndericTrack"
+    }
+}

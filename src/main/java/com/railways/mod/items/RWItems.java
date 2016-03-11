@@ -1,15 +1,17 @@
 package com.railways.mod.items;
 
 import com.railways.mod.RWGlobal;
+import com.railways.mod.blocks.RWBlocks;
 import com.railways.mod.items.armor.RWBeyronArmor;
 import com.railways.mod.items.armor.RWHardenedBeyronArmor;
-import com.railways.mod.items.carts.RWHardenedBeyronCart;
-import com.railways.mod.items.carts.RWHardenedBeyronChestCart;
+import com.railways.mod.items.carts.RWBeyronCart;
+import com.railways.mod.items.carts.RWBeyronFreightCart;
 import com.railways.mod.items.fuel.RWFuelCore;
 import com.railways.mod.items.fuel.RWIncendiusGel;
 import com.railways.mod.items.gems.RWSarnaStone;
 import com.railways.mod.items.ingots.RWBeyronIngot;
 import com.railways.mod.items.ingots.RWEmpoweredBeyronIngot;
+import com.railways.mod.items.ingots.RWEndericBeyronIngot;
 import com.railways.mod.items.ingots.RWEnergizedBeyronIngot;
 import com.railways.mod.items.ingots.RWHardenedBeyronIngot;
 import com.railways.mod.items.metals.RWBeyronSheet;
@@ -44,6 +46,7 @@ public class RWItems {
 	public static Item HardenedBeyronIngot;
 	public static Item EnergizedBeyronIngot;
 	public static Item EmpoweredBeyronIngot;
+	public static Item EndericBeyronIngot;
 	
 	// Tools
 	public static ToolMaterial BeyronTools = EnumHelper.addToolMaterial("BeyronTools", 2, 800, 8.0F, 4.0F, 10);
@@ -53,7 +56,7 @@ public class RWItems {
 	public static Item BeyronShovel;
 	public static Item BeyronHoe;
 	
-	public static ToolMaterial RailTools = EnumHelper.addToolMaterial("RailTools", 0, 300, 0.0F, 0.0F, 0);
+	public static ToolMaterial RailTools = EnumHelper.addToolMaterial("RailTools", 0, 300, 16.0F, 0.0F, 0);
 	public static Item SledgeHammer;
 	public static Item Wrench;
 	public static Item ForgeHammer;
@@ -77,20 +80,21 @@ public class RWItems {
 	public static Item IncendiusGel;
 	
 	// Minecarts
-	public static Item HardenedBeyronCart;
-	public static Item HardenedBeyronChestCart;
+	public static Item BeyronCart;
+	public static Item BeyronFreightCart;
 	
 	public static void initItems(){
 		
 		// Ores
 		GameRegistry.registerItem(BeyronIngot = new RWBeyronIngot("BeyronIngot"), "BeyronIngot");
+		GameRegistry.registerItem(HardenedBeyronIngot = new RWHardenedBeyronIngot("HardenedBeyronIngot"), "HardenedBeyronIngot");
+		GameRegistry.registerItem(EnergizedBeyronIngot = new RWEnergizedBeyronIngot("EnergizedBeyronIngot"), "EnergizedBeyronIngot");
+		GameRegistry.registerItem(EmpoweredBeyronIngot = new RWEmpoweredBeyronIngot("EmpoweredBeyronIngot"), "EmpoweredBeyronIngot");
+		GameRegistry.registerItem(EndericBeyronIngot = new RWEndericBeyronIngot("EndericBeyronIngot"), "EndericBeyronIngot");
 		
 		// Metals
 		GameRegistry.registerItem(FoldedBeyron = new RWFoldedBeyron("FoldedBeyron"), "FoldedBeyron");
 		GameRegistry.registerItem(BeyronSheet = new RWBeyronSheet("BeyronSheet"), "BeyronSheet");
-		GameRegistry.registerItem(HardenedBeyronIngot = new RWHardenedBeyronIngot("HardenedBeyronIngot"), "HardenedBeyronIngot");
-		GameRegistry.registerItem(EnergizedBeyronIngot = new RWEnergizedBeyronIngot("EnergizedBeyronIngot"), "EnergizedBeyronIngot");
-		GameRegistry.registerItem(EmpoweredBeyronIngot = new RWEmpoweredBeyronIngot("EmpoweredBeyronIngot"), "EmpoweredBeyronIngot");
 		
 		// Tools
 		GameRegistry.registerItem(BeyronAxe = new RWBeyronAxe("BeyronAxe", BeyronTools), "BeyronAxe");
@@ -122,7 +126,12 @@ public class RWItems {
 		GameRegistry.registerItem(IncendiusGel = new RWIncendiusGel("IncendiusGel"), "IncendiusGel");
 		
 		// Minecarts
-		GameRegistry.registerItem(HardenedBeyronCart = new RWHardenedBeyronCart("HardenedBeyronCart", EntityMinecart.EnumMinecartType.RIDEABLE), "HardenedBeyronCart");
-		GameRegistry.registerItem(HardenedBeyronChestCart = new RWHardenedBeyronChestCart("HardenedBeyronChestCart", EntityMinecart.EnumMinecartType.CHEST), "HardenedBeyronChestCart");
+		if (RWGlobal.BeyronCart){
+			GameRegistry.registerItem(BeyronCart = new RWBeyronCart("BeyronCart", EntityMinecart.EnumMinecartType.RIDEABLE), "BeyronCart");
+		}
+		if (RWGlobal.BeyronFreightCart){
+			GameRegistry.registerItem(BeyronFreightCart = new RWBeyronFreightCart("BeyronFreightCart", EntityMinecart.EnumMinecartType.CHEST), "BeyronFreightCart");
+		}
+		
 	}
 }

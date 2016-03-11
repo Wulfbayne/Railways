@@ -1,0 +1,6 @@
+{
+    "parent": "railways:block/EndericTrack_raised_sw",
+    "textures": {
+        "rail": "railways:blocks/EndericTrack_Active"
+    }
+}

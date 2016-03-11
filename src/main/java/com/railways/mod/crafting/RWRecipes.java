@@ -4,6 +4,7 @@ import com.railways.mod.blocks.RWBlocks;
 import com.railways.mod.items.RWItems;
 
 import net.minecraft.item.crafting.CraftingManager;
+import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.oredict.OreDictionary;
@@ -29,10 +30,9 @@ public class RWRecipes {
 						"   ",
 						'#', "gemSarnaStone"
 				}));
-		GameRegistry.addShapelessRecipe(new ItemStack(RWItems.BeyronIngot, 9),
-				new Object[]{
-						RWBlocks.BeyronBlock,	
-				});
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(RWItems.BeyronIngot,9), new Object[]{
+				RWBlocks.BeyronBlock,
+		}));
 		GameRegistry.addRecipe(new ShapedOreRecipe(RWItems.BeyronAxe,true,
 				new Object[] {
 						"## ",
@@ -135,7 +135,7 @@ public class RWRecipes {
 						'#', "materialIncendiusGel",
 						'D', "gemSarnaStone",
 				}));
-		GameRegistry.addRecipe(new ShapedOreRecipe(RWItems.HardenedBeyronIngot,true,
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(RWItems.HardenedBeyronIngot,4),true,
 				new Object[] {
 						"#D#",
 						"D#D",
@@ -181,5 +181,11 @@ public class RWRecipes {
 						"ingotEnergizedBeyron",
 						 "dustGlowstone",
 				}));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(RWItems.EndericBeyronIngot, 
+				new Object[]{
+						"ingotEmpoweredBeyron",
+						 Items.ender_eye,
+				}));
+
 	}
 }	

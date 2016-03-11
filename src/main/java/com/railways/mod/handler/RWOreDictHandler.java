@@ -22,6 +22,7 @@ public class RWOreDictHandler {
 		OreDictionary.registerOre("ingotHardenedBeyron", RWItems.HardenedBeyronIngot);
 		OreDictionary.registerOre("ingotEnergizedBeyron", RWItems.EnergizedBeyronIngot);
 		OreDictionary.registerOre("ingotEmpoweredBeyron", RWItems.EmpoweredBeyronIngot);
+		OreDictionary.registerOre("ingotEndericBeyron", RWItems.EndericBeyronIngot);
 
 		// Extraneous Metals
 		OreDictionary.registerOre("materialBeyronSheet", RWItems.BeyronSheet);

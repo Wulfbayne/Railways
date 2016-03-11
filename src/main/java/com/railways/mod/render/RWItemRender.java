@@ -34,6 +34,7 @@ public class RWItemRender {
 		regItem(RWItems.HardenedBeyronIngot);
 		regItem(RWItems.EnergizedBeyronIngot);
 		regItem(RWItems.EmpoweredBeyronIngot);
+		regItem(RWItems.EndericBeyronIngot);
 						
 		// Armor
 		regItem(RWItems.BeyronBoots);
@@ -52,8 +53,13 @@ public class RWItemRender {
 		regItem(RWItems.IncendiusGel);
 		
 		// Minecarts
-		regItem(RWItems.HardenedBeyronCart);
-		regItem(RWItems.HardenedBeyronChestCart);
+		if (RWGlobal.BeyronCart){
+			regItem(RWItems.BeyronCart);			
+		}
+		if (RWGlobal.BeyronFreightCart){
+			regItem(RWItems.BeyronFreightCart);
+		}
+		
 		
 	}
 	

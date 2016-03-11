@@ -32,5 +32,13 @@ public class RWBlock extends Block{
 		return this == RWBlocks.SarnaOre ? 1 + rand.nextInt(5) : 1;
 	}
 	
+	@Override
+    public boolean isToolEffective(String type, IBlockState state)
+    {
+        if ("pickaxe".equals(type) && (this == net.minecraft.init.Blocks.redstone_ore || this == net.minecraft.init.Blocks.lit_redstone_ore || this == net.minecraft.init.Blocks.obsidian))
+            return false;
+        return type != null && type.equals(getHarvestTool(state));
+    }
+
 	
 }

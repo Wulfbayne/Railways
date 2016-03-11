@@ -35,6 +35,9 @@ public final class RWBlockRender {
 		if (RWGlobal.EnergizedTrackEnabeld){
 			regBlock(RWBlocks.EnergizedTrack);
 		}
+		if (RWGlobal.EndericTrackEnabled){
+			regBlock(RWBlocks.EndericTrack);			
+		}
 		
 		regBlock(RWBlocks.HardenedTrack);
 

@@ -1,0 +1,6 @@
+{
+    "parent": "railways:block/EnergizedTrack_raised_ne",
+    "textures": {
+        "rail": "railways:blocks/EnergizedTrack_Active"
+    }
+}

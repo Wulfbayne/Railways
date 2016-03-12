@@ -63,7 +63,7 @@ public class RWBlocks {
 			GameRegistry.registerBlock(EmpoweredTrack = new RWEmpoweredTrack("EmpoweredTrack",true), "EmpoweredTrack");
 		}
 		if (RWGlobal.EnergizedTrackEnabeld){
-			GameRegistry.registerBlock(EnergizedTrack = new RWEnergizedTrack("EnergizedTrack", true), "EnergizedTrack");
+			GameRegistry.registerBlock(EnergizedTrack = new RWEnergizedTrack("EnergizedTrack"), "EnergizedTrack");
 		}
 		if (RWGlobal.EndericTrackEnabled){
 			GameRegistry.registerBlock(EndericTrack = new RWEndericTrack("EndericTrack", true), "EndericTrack");			

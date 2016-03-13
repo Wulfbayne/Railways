@@ -53,10 +53,10 @@ public class RWItemRender {
 		regItem(RWItems.IncendiusGel);
 		
 		// Minecarts
-		if (RWGlobal.BeyronCart){
+		if (RWGlobal.BeyronCartEnabled){
 			regItem(RWItems.BeyronCart);			
 		}
-		if (RWGlobal.BeyronFreightCart){
+		if (RWGlobal.BeyronFreightCartEnabled){
 			regItem(RWItems.BeyronFreightCart);
 		}
 		

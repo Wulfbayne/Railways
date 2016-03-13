@@ -36,7 +36,7 @@ public class RWBeyronArmor extends ItemArmor{
 		}
 		
 		if(this.isWearingFullSet(player, RWItems.BeyronHelmet, RWItems.BeyronChestplate, RWItems.BeyronLeggings, RWItems.BeyronBoots) == true){
-			 this.effectPlayer(player, Potion.regeneration, 1);
+//			 this.effectPlayer(player, Potion.regeneration, 1);
 		}
 		
 	}

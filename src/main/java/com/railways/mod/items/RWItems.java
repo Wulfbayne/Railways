@@ -126,10 +126,10 @@ public class RWItems {
 		GameRegistry.registerItem(IncendiusGel = new RWIncendiusGel("IncendiusGel"), "IncendiusGel");
 		
 		// Minecarts
-		if (RWGlobal.BeyronCart){
+		if (RWGlobal.BeyronCartEnabled){
 			GameRegistry.registerItem(BeyronCart = new RWBeyronCart("BeyronCart", EntityMinecart.EnumMinecartType.RIDEABLE), "BeyronCart");
 		}
-		if (RWGlobal.BeyronFreightCart){
+		if (RWGlobal.BeyronFreightCartEnabled){
 			GameRegistry.registerItem(BeyronFreightCart = new RWBeyronFreightCart("BeyronFreightCart", EntityMinecart.EnumMinecartType.CHEST), "BeyronFreightCart");
 		}
 		

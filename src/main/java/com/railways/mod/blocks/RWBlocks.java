@@ -2,6 +2,8 @@ package com.railways.mod.blocks;
 
 
 import com.railways.mod.RWGlobal;
+import com.railways.mod.blocks.machine.RWFabricatorMachine;
+import com.railways.mod.blocks.machine.RWWorkbenchMachine;
 import com.railways.mod.blocks.rail.RWEmpoweredTrack;
 import com.railways.mod.blocks.rail.RWEndericTrack;
 import com.railways.mod.blocks.rail.RWEnergizedTrack;
@@ -37,6 +39,8 @@ public class RWBlocks {
 	public static Block EndericTrack;
 	
 	// Machines
+	public static Block FabricatorMachine;
+	public static Block WorkbenchMachine;
 
 	
 	public static void initBlocks(){
@@ -70,7 +74,12 @@ public class RWBlocks {
 		}
 		
 		// Machines
-		
+		if (RWGlobal.FabricatorEnabled){
+			GameRegistry.registerBlock(FabricatorMachine = new RWFabricatorMachine("FabricatorMachine", Material.iron), "FabricatorMachine");
+		}
+		if (RWGlobal.WorkbenchEnabled){
+			GameRegistry.registerBlock(WorkbenchMachine = new RWWorkbenchMachine("WorkdbenchMachine", Material.iron), "WorkbenchMachine");
+		}
 		
 	}	
 }

@@ -8,6 +8,7 @@ item.EndericBeyronIngot.name=Enderic Beyron Ingot
 
 item.BeyronSheet.name=Beyron Sheet
 item.FoldedBeyron.name=Folded Beyron
+item.HardenedBeyronClump.name=Hardened Beyron Clump
 
 item.SarnaStone.name=Sarna Stone
 
@@ -37,6 +38,7 @@ item.HardenedBeyronBoots.name=Hardened Beyron Boots
 tile.EmpoweredTrack.name=Empowered Track
 tile.EnergizedTrack.name=Energized Track
 tile.HardenedTrack.name=Hardened Track
+tile.EndericTrack.name=Enderic Track
 
 item.BeyronCart.name=Beyron Cart
 item.BeyronFreightCart.name=Beyron Freight Cart
@@ -48,3 +50,16 @@ tile.netherSarnaOre.name=Nether Sarna Ore
 
 tile.BeyronBlock.name=Beyron Block
 tile.SarnaBlock.name=Sarna Block
+
+item.RailFrame.name=Rail Frame
+item.BeyronRailTie.name=Beyron Rail Tie
+item.HardenedBeyronRailSegment.name=Hardened Beyron Rail Segment
+item.EnergizedRailSegment.name=Energized Rail Segment
+item.EmpoweredRailSegment.name=Empowered Rail Segment
+item.EndericRailSegment.name=Enderic Rail Segment
+item.BeyronCore.name=Beyron Core
+item.BeyronRailBed.name=Beyron Rail Bed
+item.HardenedBeyronRail.name=Hardened Beyron Rail
+item.EnergizedRail.name=Energized Rail
+item.EmpoweredRail.name=Empowered Rail
+item.EndericRail.name=Enderic Rail

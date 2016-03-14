@@ -2,10 +2,12 @@ package com.railways.mod.items.metals;
 
 import com.railways.mod.items.RWItem;
 
-public class RWBeyronSheet extends RWItem {
+public class RWHardenedBeyronClump extends RWItem {
 
-	public RWBeyronSheet(String name) {
+	public RWHardenedBeyronClump(String name) {
 		super(name);
+ 
 	}
 
+	
 }

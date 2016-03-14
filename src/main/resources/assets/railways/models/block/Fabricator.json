@@ -1,0 +1,8 @@
+{
+    "parent": "railways:block/Orientable",
+    "textures": {
+        "top": "railways:blocks/Fabricator_Top",
+        "front": "railways:blocks/Fabricator_Front_off",
+        "side": "railways:blocks/Fabricator_Sides"
+    }
+}

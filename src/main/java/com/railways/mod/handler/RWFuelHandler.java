@@ -2,12 +2,12 @@ package com.railways.mod.handler;
 
 import com.railways.mod.items.RWItems;
 
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.IFuelHandler;
+import net.minecraftforge.oredict.OreDictionary;
 
 public class RWFuelHandler implements IFuelHandler {
-
-	
 	
 	@Override
 	public int getBurnTime(ItemStack fuel) {

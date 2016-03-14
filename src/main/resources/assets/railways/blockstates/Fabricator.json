@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "railways:Fabricator" },
+        "facing=south": { "model": "railways:Fabricator", "y": 180 },
+        "facing=west":  { "model": "railways:Fabricator", "y": 270 },
+        "facing=east":  { "model": "railways:Fabricator", "y": 90 }
+    }
+}

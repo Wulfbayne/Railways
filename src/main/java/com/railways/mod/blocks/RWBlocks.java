@@ -41,6 +41,7 @@ public class RWBlocks {
 	// Machines
 	public static Block FabricatorMachine;
 	public static Block WorkbenchMachine;
+	public static Block Active_FabricatorMachine;
 
 	
 	public static void initBlocks(){
@@ -75,7 +76,9 @@ public class RWBlocks {
 		
 		// Machines
 		if (RWGlobal.FabricatorEnabled){
-			GameRegistry.registerBlock(FabricatorMachine = new RWFabricatorMachine("FabricatorMachine", Material.iron), "FabricatorMachine");
+			GameRegistry.registerBlock(FabricatorMachine = new RWFabricatorMachine("FabricatorMachine", Material.iron, false), "FabricatorMachine");
+//			GameRegistry.registerBlock(Active_FabricatorMachine = new RWFabricatorMachine("FabricatorMachine", Material.iron, false), "FabricatorMachine");
+			
 		}
 		if (RWGlobal.WorkbenchEnabled){
 			GameRegistry.registerBlock(WorkbenchMachine = new RWWorkbenchMachine("WorkdbenchMachine", Material.iron), "WorkbenchMachine");

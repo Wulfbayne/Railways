@@ -16,6 +16,7 @@ public class RWOreDictHandler {
 		OreDictionary.registerOre("oreNetherSarna", RWBlocks.netherSarnaOre);
 		
 		// Metals Registration
+		OreDictionary.registerOre("clumpHardenedBeyron", RWItems.HardenedBeyronClump);
 
 		// Ingots
 		OreDictionary.registerOre("ingotBeyron", RWItems.BeyronIngot);

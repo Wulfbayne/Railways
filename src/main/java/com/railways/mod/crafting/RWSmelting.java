@@ -16,6 +16,7 @@ public class RWSmelting {
 		GameRegistry.addSmelting(RWBlocks.BeyronOre, new ItemStack(RWItems.BeyronIngot), 10);
 		GameRegistry.addSmelting(RWBlocks.netherBeyronOre, new ItemStack(RWBlocks.BeyronOre, 3), 20);
 		GameRegistry.addSmelting(RWBlocks.netherSarnaOre, new ItemStack(RWBlocks.SarnaOre, 3), 20);
+		GameRegistry.addSmelting(RWItems.HardenedBeyronClump, new ItemStack(RWItems.HardenedBeyronIngot), 20);
 							
 	}	
 }

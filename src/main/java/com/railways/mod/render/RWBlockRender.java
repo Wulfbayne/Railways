@@ -38,8 +38,15 @@ public final class RWBlockRender {
 		if (RWGlobal.EndericTrackEnabled){
 			regBlock(RWBlocks.EndericTrack);			
 		}
-		
 		regBlock(RWBlocks.HardenedTrack);
+		
+		// Machines
+		if (RWGlobal.FabricatorEnabled){
+			regBlock(RWBlocks.FabricatorMachine);
+		}
+		if (RWGlobal.WorkbenchEnabled){
+			regBlock(RWBlocks.WorkbenchMachine);
+		}
 
 	}
 	

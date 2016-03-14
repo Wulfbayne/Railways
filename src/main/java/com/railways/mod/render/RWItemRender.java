@@ -24,6 +24,8 @@ public class RWItemRender {
 		regItem(RWItems.BeyronPickaxe);
 		regItem(RWItems.BeyronShovel);
 		regItem(RWItems.BeyronSword);
+		
+		// Rail Tools
 		regItem(RWItems.SledgeHammer);
 		regItem(RWItems.Wrench);
 		regItem(RWItems.ForgeHammer);
@@ -35,19 +37,35 @@ public class RWItemRender {
 		regItem(RWItems.EnergizedBeyronIngot);
 		regItem(RWItems.EmpoweredBeyronIngot);
 		regItem(RWItems.EndericBeyronIngot);
-						
-		// Armor
+		regItem(RWItems.HardenedBeyronClump);
+		
+		// Tier 1 Armor
 		regItem(RWItems.BeyronBoots);
 		regItem(RWItems.BeyronChestplate);
 		regItem(RWItems.BeyronHelmet);
 		regItem(RWItems.BeyronLeggings);
 		
+		// Tier 2 Armor
 		regItem(RWItems.HardenedBeyronBoots);
 		regItem(RWItems.HardenedBeyronChestplate);
 		regItem(RWItems.HardenedBeyronHelmet);
 		regItem(RWItems.HardenedBeyronLeggings);
 
+		// Track Materials
+		regItem(RWItems.BeyronCore);
 		
+		regItem(RWItems.BeyronRailBed);
+		regItem(RWItems.BeyronRailTie);
+		regItem(RWItems.EmpoweredRail);
+		regItem(RWItems.EmpoweredRailSegment);
+		regItem(RWItems.EndericRail);
+		regItem(RWItems.EndericRailSegment);
+		regItem(RWItems.EnergizedRail);
+		regItem(RWItems.EnergizedRailSegment);
+		regItem(RWItems.HardenedBeyronRail);
+		regItem(RWItems.HardenedBeyronRailSegment);
+		regItem(RWItems.RailFrame);
+				
 		// Fuels
 		regItem(RWItems.FuelCore);
 		regItem(RWItems.IncendiusGel);

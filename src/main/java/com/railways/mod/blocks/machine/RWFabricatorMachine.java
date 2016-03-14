@@ -32,16 +32,15 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class RWFabricatorMachine extends BlockContainer {
 
     public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
-    private final boolean isBurning;
+    private final boolean Running;
     private static boolean keepInventory;
 	
-	public RWFabricatorMachine(String unlocalizedname,Material materialIn) {
+	public RWFabricatorMachine(String unlocalizedname,Material materialIn, Boolean isActive) {
 		super(materialIn);
 		this.setUnlocalizedName(unlocalizedname);
 		this.setCreativeTab(RWGlobal.rwCreativeTab);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
-        this.isBurning = false;
-		// TODO Auto-generated constructor stub
+        this.Running = isActive;
 	}
 
     public Item getItemDropped(IBlockState state, Random rand, int fortune)
@@ -113,13 +112,13 @@ public class RWFabricatorMachine extends BlockContainer {
 
         if (active)
         {
-            worldIn.setBlockState(pos, Blocks.lit_furnace.getDefaultState().withProperty(FACING, iblockstate.getValue(FACING)), 3);
-            worldIn.setBlockState(pos, Blocks.lit_furnace.getDefaultState().withProperty(FACING, iblockstate.getValue(FACING)), 3);
+            worldIn.setBlockState(pos, RWBlocks.Active_FabricatorMachine.getDefaultState().withProperty(FACING, iblockstate.getValue(FACING)), 3);
+            worldIn.setBlockState(pos, RWBlocks.Active_FabricatorMachine.getDefaultState().withProperty(FACING, iblockstate.getValue(FACING)), 3);
         }
         else
         {
-            worldIn.setBlockState(pos, Blocks.furnace.getDefaultState().withProperty(FACING, iblockstate.getValue(FACING)), 3);
-            worldIn.setBlockState(pos, Blocks.furnace.getDefaultState().withProperty(FACING, iblockstate.getValue(FACING)), 3);
+            worldIn.setBlockState(pos, RWBlocks.FabricatorMachine.getDefaultState().withProperty(FACING, iblockstate.getValue(FACING)), 3);
+            worldIn.setBlockState(pos, RWBlocks.FabricatorMachine.getDefaultState().withProperty(FACING, iblockstate.getValue(FACING)), 3);
         }
 
         keepInventory = false;
@@ -195,7 +194,7 @@ public class RWFabricatorMachine extends BlockContainer {
     @SideOnly(Side.CLIENT)
     public Item getItem(World worldIn, BlockPos pos)
     {
-        return Item.getItemFromBlock(Blocks.furnace);
+        return Item.getItemFromBlock(RWBlocks.FabricatorMachine);
     }
 
     /**

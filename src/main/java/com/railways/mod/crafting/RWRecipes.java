@@ -237,81 +237,81 @@ public class RWRecipes {
 						"  #",
 						'#', "ingotHardenedBeyron"
 				}));
-		GameRegistry.addShapedRecipe(new ItemStack(RWItems.BeyronRailBed),
+		GameRegistry.addRecipe(new ShapedOreRecipe(RWItems.BeyronRailBed,
 				new Object[]{
 						"## ",
 						"## ",
 						"   ",
-						'#', RWItems.BeyronRailTie,
+						'#', "railBeyronRailTie",
 						
-				});
-		GameRegistry.addShapedRecipe(new ItemStack(RWBlocks.HardenedTrack,16),
+				}));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(RWBlocks.HardenedTrack,16),
 				new Object[]{
 						"# #",
 						"#S#",
 						"# #",
-						'#', RWItems.BeyronRailBed,
-						'S', RWItems.HardenedBeyronRail
+						'#', "railHardenedBeyronRail",
+						'S', "railBeyronRailBed"
 						
-				});
-		GameRegistry.addRecipe(new ItemStack(RWItems.HardenedBeyronRail),
+				}));
+		GameRegistry.addRecipe(new ShapedOreRecipe(RWItems.HardenedBeyronRail,
 				new Object[]{
 						"#S#",
 						"#S#",
 						"#S#",
-						'#', RWItems.RailFrame,
-						'S', RWItems.HardenedBeyronRailSegment
-				});
-		GameRegistry.addShapedRecipe(new ItemStack(RWItems.EmpoweredRail),
+						'#', "railRailFrame",
+						'S', "railHardenedBeyronRailSegment"
+				}));
+		GameRegistry.addRecipe(new ShapedOreRecipe(RWItems.EmpoweredRail,
 				new Object[]{
 						"#S#",
 						"#S#",
 						"#S#",
-						'#', RWItems.RailFrame,
-						'S', RWItems.EmpoweredRailSegment
-				});
-		GameRegistry.addShapedRecipe(new ItemStack(RWItems.EnergizedRail),
+						'#', "railRailFrame",
+						'S', "railEmpoweredRailSegment"
+				}));
+		GameRegistry.addRecipe(new ShapedOreRecipe(RWItems.EnergizedRail,
 				new Object[]{
 						"#S#",
 						"#S#",
 						"#S#",
-						'#', RWItems.RailFrame,
-						'S', RWItems.EnergizedRailSegment
-				});
-		GameRegistry.addShapedRecipe(new ItemStack(RWItems.EndericRail),
+						'#', "railRailFrame",
+						'S', "railEnergizedRailSegment"
+				}));
+		GameRegistry.addRecipe(new ShapedOreRecipe(RWItems.EndericRail,
 				new Object[]{
 						"#S#",
 						"#S#",
 						"#S#",
-						'#', RWItems.RailFrame,
-						'S', RWItems.EndericRailSegment
-				});
-		GameRegistry.addShapedRecipe(new ItemStack(RWBlocks.EmpoweredTrack,16),
+						'#', "railRailFrame",
+						'S', "railEndericRailSegment"
+				}));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(RWBlocks.EmpoweredTrack,16),
 				new Object[]{
 						"# #",
 						"#S#",
 						"# #",
-						'#', RWItems.BeyronRailBed,
-						'S', RWItems.HardenedBeyronRail
+						'#', "railBeyronRailBed",
+						'S', "railHardenedBeyronRail"
 						
-				});
-		GameRegistry.addShapedRecipe(new ItemStack(RWBlocks.EnergizedTrack,16),
+				}));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(RWBlocks.EnergizedTrack,16),
 				new Object[]{
 						"# #",
 						"#S#",
 						"# #",
-						'#', RWItems.BeyronRailBed,
-						'S', RWItems.HardenedBeyronRail
+						'#', "railBeyronRailBed",
+						'S', "railEnergizedRail"
 						
-				});
-		GameRegistry.addShapedRecipe(new ItemStack(RWBlocks.EndericTrack,16),
+				}));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(RWBlocks.EndericTrack,16),
 				new Object[]{
 						"# #",
 						"#S#",
 						"# #",
-						'#', RWItems.BeyronRailBed,
-						'S', RWItems.HardenedBeyronRail
+						'#', "railBeyronRailBed",
+						'S', "railEndericRail"
 						
-				});
+				}));
 	}
 }	

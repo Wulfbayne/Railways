@@ -17,6 +17,8 @@ public class RWOreDictHandler {
 		
 		// Metals Registration
 		OreDictionary.registerOre("clumpHardenedBeyron", RWItems.HardenedBeyronClump);
+		OreDictionary.registerOre("materialBeyronSheet", RWItems.BeyronSheet);
+		OreDictionary.registerOre("materialFoldedBeyron", RWItems.FoldedBeyron);
 
 		// Ingots
 		OreDictionary.registerOre("ingotBeyron", RWItems.BeyronIngot);
@@ -25,9 +27,19 @@ public class RWOreDictHandler {
 		OreDictionary.registerOre("ingotEmpoweredBeyron", RWItems.EmpoweredBeyronIngot);
 		OreDictionary.registerOre("ingotEndericBeyron", RWItems.EndericBeyronIngot);
 
-		// Extraneous Metals
-		OreDictionary.registerOre("materialBeyronSheet", RWItems.BeyronSheet);
-		OreDictionary.registerOre("materialFoldedBeyron", RWItems.FoldedBeyron);
+		// Rails
+		OreDictionary.registerOre("railBeyronRailTie", RWItems.BeyronRailTie);
+		OreDictionary.registerOre("railBeyronRailBed", RWItems.BeyronRailBed);
+		OreDictionary.registerOre("railBeyronCore", RWItems.BeyronCore);
+		OreDictionary.registerOre("railRailFrame", RWItems.RailFrame);
+		OreDictionary.registerOre("railHardenedBeyronRailSegment", RWItems.HardenedBeyronRailSegment);
+		OreDictionary.registerOre("railEnergizedRailSegment", RWItems.EnergizedRailSegment);
+		OreDictionary.registerOre("railEmpoweredRailSegment", RWItems.EmpoweredRailSegment);
+		OreDictionary.registerOre("railEndericRailSegment", RWItems.EndericRailSegment);
+		OreDictionary.registerOre("railHardenedBeyronRail", RWItems.HardenedBeyronRail);
+		OreDictionary.registerOre("railEnergizedRail", RWItems.EnergizedRail);
+		OreDictionary.registerOre("railEmpoweredRail", RWItems.EmpoweredRail);
+		OreDictionary.registerOre("railEndericRail", RWItems.EndericRail);
 		
 		// Gems
 		OreDictionary.registerOre("gemSarnaStone", RWItems.SarnaStone);

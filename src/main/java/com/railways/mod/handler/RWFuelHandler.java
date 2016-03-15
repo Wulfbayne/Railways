@@ -11,8 +11,8 @@ public class RWFuelHandler implements IFuelHandler {
 	
 	@Override
 	public int getBurnTime(ItemStack fuel) {
-		if (fuel.getItem() == RWItems.FuelCore)return 4000;
-		if (fuel.getItem() == RWItems.IncendiusGel) return 2000;
+		if (fuel.getItem() == RWItems.FuelCore)return 6000;
+		if (fuel.getItem() == RWItems.IncendiusGel) return 3000;
 		return 0;
 	}
 	
